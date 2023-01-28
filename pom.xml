@@ -57,10 +57,10 @@
         <read.timeout>30000</read.timeout>
         <connection.timeout>40000</connection.timeout>
         <retry.attempts>4</retry.attempts>
-        <browser>firefox</browser>
+        <browser>chrome</browser>
         <threads>1</threads>
         <remote>false</remote>
-        <headless>true</headless>
+  
         <seleniumGridURL/>
         <platform/>
         <browserVersion/>
@@ -77,6 +77,11 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4j-api.version}</version>
             <scope>test</scope>
+        </dependency>
+      <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.4.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
