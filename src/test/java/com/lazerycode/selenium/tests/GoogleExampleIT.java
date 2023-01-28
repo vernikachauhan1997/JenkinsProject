@@ -15,7 +15,8 @@ public class GoogleExampleIT extends DriverBase {
     public void googleCheeseExample() throws Exception {
         // Create a new WebDriver instance
         // Notice that the remainder of the code relies on the interface, not the implementation.
-        WebDriver driver = getDriver();
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
 
         // First of all, let's navigate to the google home page
         driver.get("http://www.google.com");
@@ -43,7 +44,8 @@ public class GoogleExampleIT extends DriverBase {
     public void googleMilkExample() throws Exception {
         // Create a new WebDriver instance
         // Notice that the remainder of the code relies on the interface, not the implementation.
-        WebDriver driver = getDriver();
+       WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
 
         // First of all, let's navigate to the google home page
         driver.get("http://www.google.com");
